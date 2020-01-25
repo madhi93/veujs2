@@ -17,9 +17,8 @@ class Advertisement extends Model
         'type',
         'start_at',
         'ends_at',
-        'days',
+        'is_expired',
         'shop_id',
-        'active_status',
         'status'
     ];
 

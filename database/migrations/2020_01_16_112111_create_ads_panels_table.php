@@ -17,7 +17,6 @@ class CreateAdsPanelsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('pannel_id');
             $table->unsignedBigInteger('ads_id')->nullable();
-            $table->integer('timer')->default(30);
             $table->integer('panel_row')->nullable();
             $table->integer('order_column')->nullable();
             $table->timestamps();

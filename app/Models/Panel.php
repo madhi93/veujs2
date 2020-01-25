@@ -16,6 +16,10 @@ class Panel extends Model
         'description',
         'no_of_ads', 
         'timer',
+        'start_at',
+        'ends_at',
+        'days',
+        'is_expired',
         'status'
     ];
 

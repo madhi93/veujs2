@@ -21,10 +21,8 @@ class CreateAdvertisementsTable extends Migration
             $table->string('type')->nullable();
             $table->timestamp('start_at')->nullable();
             $table->timestamp('ends_at')->nullable();
-            $table->text('days')->nullable();
             $table->boolean('is_expired')->nullable();
-            $table->unsignedBigInteger('shop_id')->nullable();
-            $table->string('active_status')->default('inactive');
+            $table->unsignedBigInteger('shop_id')->nullable()->index();
             $table->timestamps();
             $table->boolean('status')->default(true);
         });
