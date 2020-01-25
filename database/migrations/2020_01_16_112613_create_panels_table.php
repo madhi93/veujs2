@@ -19,6 +19,10 @@ class CreatePanelsTable extends Migration
             $table->text('description')->nullable();
             $table->integer('no_of_ads')->default(0);
             $table->integer('timer')->default(60);
+            $table->timestamp('start_at')->nullable();
+            $table->timestamp('ends_at')->nullable();
+            $table->text('days')->nullable();
+            $table->boolean('is_expired')->nullable();
             $table->timestamps();
             $table->boolean('status')->default(true);
         });
